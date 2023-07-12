@@ -1,14 +1,43 @@
-// const score: Array<number> = [];
-// const names: Array<string> = [];
+// type GenericArray<T> = Array<T>;
+// type GenericTupple<X, Y> = [X, Y];
 
-// function identityOne(val: boolean | number):boolean|number{
-//     return val;
+
+// const rollNumbers: GenericArray<number> = [1,2, 3];
+// const rollNumbers2: GenericArray<string> = ['1','2', '3'];
+// const rollNumbers3: GenericArray<boolean>= [true, false];
+
+// type userNameAndRollType = {
+//     name: string,
+//     roll: number
 // }
 
-// function identityTwo(val: any): any{
-//     return val;
+
+// const userNameAndRollNumbers: GenericArray<userNameAndRollType> = [
+//     {
+//         name: 'John',
+//         roll: 30
+//     },
+//     {
+//         name: 'Salek',
+//         roll: 90
+//     }
+// ]
+
+// // type RelationWithSalaryType = {
+// //     name: string,
+// //     salary: number
+// // }
+
+
+// interface RelationWithSalaryInterface{
+//     name: string, 
+//     salary: number
 // }
 
-// function identityThree<Type>(val:Type ): Type{
-//     return val;
-// }
+// const relationWithSalary: GenericTupple<RelationWithSalaryInterface, string> = [
+//     {
+//         name: 'Kabir',
+//         salary: 200000
+//     },
+//     'dhaka'
+// ]
